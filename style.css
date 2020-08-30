@@ -2,8 +2,6 @@
 
 .page-main {
   height: 100vh;
-  padding-top: 37px;
-  padding-bottom: 50px;
   font-family: "Trebuchet MS", Arial, sans-serif;
   color: #000;
   background-image: url('./img/pattern.png');
@@ -12,9 +10,12 @@
 }
 
 .product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: calc(100% - 160px);
   max-width: 1120px;
-  margin: 0 auto;
 }
 
 .product__title {
