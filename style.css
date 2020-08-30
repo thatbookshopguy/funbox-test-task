@@ -55,7 +55,6 @@
   cursor: pointer;
 }
 
-
 .card:before {
   position: absolute;
   top: -15px;
@@ -138,8 +137,6 @@
 }
 
 /* selected */
-
-
 .selected {
   border-color: #D91667;
 }
@@ -153,7 +150,6 @@
 }
 
 /* disabled */
-
 .disabled {
   background-image: none;
   border-color: #B3B3B3;
@@ -186,7 +182,7 @@
   opacity: 1;
 }
 
-.disabled + .item__text {
+.disabled+.item__text {
   color: #FFFF66;
 }
 
@@ -199,23 +195,26 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .product__list {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
   .product__item {
-    margin: 2% 2%;
+    margin: 10% 0;
   }
 }
 
 /* tablet */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
+  .product {
+    width: 100%;
+  }
+
   .product__list {
     justify-content: center;
     flex-wrap: wrap;
   }
 
   .product__item {
-    margin: 2% 2%;
+    margin: 3%;
   }
 }
