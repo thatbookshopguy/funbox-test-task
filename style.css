@@ -7,6 +7,7 @@
   font-family: "Trebuchet MS", Arial, sans-serif;
   color: #000;
   background-image: url('./img/pattern.png');
+  background-color: #000;
   background-repeat: repeat;
 }
 
@@ -136,6 +137,20 @@
   text-decoration-style: dashed;
 }
 
+/* hover */
+
+.card:hover:not(.disabled):not(.selected)  {
+  border-color: #2EA8E6
+}
+
+.card:hover:not(.disabled):not(.selected)::before {
+  background-color: #2EA8E6;
+}
+
+.card:hover:not(.disabled):not(.selected) .card__size {
+  background-color: #2EA8E6;
+}
+
 /* selected */
 .selected {
   border-color: #D91667;
@@ -148,6 +163,20 @@
 .selected .card__size {
   background-color: #D91667;
 }
+
+.selected:hover {
+  border-color: #E52E7A;
+}
+
+.selected:hover::before {
+  background-color: #E52E7A;
+}
+
+.selected:hover .card__size {
+  background-color: #E52E7A;
+}
+
+
 
 /* disabled */
 .disabled {
@@ -192,7 +221,7 @@
 
 /* media */
 /* mobile */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 480px) {
   .page-main {
     height: auto;
   }
@@ -208,7 +237,7 @@
 }
 
 /* tablet */
-@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 480px) and (max-width : 1024px) {
   .page-main {
     height: auto;
   }
