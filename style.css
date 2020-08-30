@@ -139,8 +139,7 @@
 }
 
 /* hover */
-
-.card:hover:not(.disabled):not(.selected)  {
+.card:hover:not(.disabled):not(.selected) {
   border-color: #2EA8E6
 }
 
@@ -176,8 +175,6 @@
 .selected:hover .card__size {
   background-color: #E52E7A;
 }
-
-
 
 /* disabled */
 .disabled {
@@ -227,6 +224,15 @@
     height: auto;
   }
 
+  .product {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding-top: 10%;
+    transform: none;
+  }
+
   .product__list {
     flex-direction: column;
     align-items: center;
@@ -244,6 +250,12 @@
   }
 
   .product {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding-top: 10%;
+    transform: none;
     width: 100%;
   }
 
